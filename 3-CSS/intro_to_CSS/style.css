@@ -1,0 +1,105 @@
+/* select all  */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: chocolate;
+}
+
+span {
+    background-color: aquamarine;
+}
+
+li {
+    background-color: red;
+}
+.listClass{
+    background-color: orange;
+}
+#listID {background-color: yellow;}
+
+li[value="list"]{background-color: green;}
+
+.listClass1, .listClass2 {
+    background-color: skyblue;
+}
+
+ul .listClass3 {
+    background-color: indigo;
+    color: white;
+}
+/* Pseudo-Classes */
+.hoverBtn:hover {
+    background-color: black;
+    color: white;
+    cursor:pointer
+}
+
+.activeBtn:active {
+    background-color: darkgrey;
+}
+
+.focusInput:focus {
+    background-color: skyblue;
+    border-width: 5px;
+}
+
+.visitedLink:visited{
+    color:pink;
+}
+
+/* Pseudo-Element use :: */
+.firstLetter::first-letter{
+    font-size: 2em;
+}
+
+.firstLine::first-line{
+    color : blue
+}
+
+.beforeAndAfter::before{
+    content: "before";
+    color: red;
+}
+.beforeAndAfter::after{
+    content: "after";
+    color: pink;
+}
+
+.price::before {
+    content:"$"
+}
+
+.selectParts::selection {
+    background-color: crimson;
+}
+
+/* earlier rule. CSS only follows if you put important */
+.cascade {
+    color: red !important;
+}
+
+/* later rule overwrites the earlier rule in CSS */
+.cascade {
+    color: blue;
+}
+
+/* box model.border style is so fun! */
+.boxModel {
+    background-color: white;
+    border-color: black paleturquoise cornflowerblue;
+    border-width: 5px 10px 15px;
+    border-style: dashed hidden;
+    /* or just write it in oneline: border: black 5px solid; */
+    border-radius: 20 px;
+    /* this will be for two kinds or borders on a same box */
+    border-style: solid dotted dashed solid;
+
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    /* or just write it in margin: 10px 20px; 10 would be top and bottom while 20 be sides. if margin: 10px,20px,30px; 10 will be top, 20 will be sides, 30 will be bottom*/
+    /* 1 value= all sides
+    2 values= top and bottom, right and left
+    3 values = top, right and left, bottom 
+    4 values = top, right, bottom, left*/
+}

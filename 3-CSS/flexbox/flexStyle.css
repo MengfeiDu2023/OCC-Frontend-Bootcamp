@@ -1,0 +1,64 @@
+.flexItem {
+    width: 200px;
+    margin: 10px;
+    border: 2px black solid;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    
+}
+.cross-axis {
+    position: absolute;
+    right: 50%;
+    height: 1080px;
+    width: 3px;
+    background-color: blue;
+}
+
+.main-axis {
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 2160px;
+    background-color: red;
+}
+
+.container {
+    height: 700px;
+    background-color: yellowgreen;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ======= Flexbox properties discussion starts here ========*/
+
+.flexContainer{
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* wrap 在网页缩小的时候可以看得出wrap的作用 */
+    justify-content: flex-end;
+    /* justify is always for main axis . flex-end.flex-start, space-between等间距,space-around两边留余地的等间距*/
+    /* align-content: flex-start; */
+    align-items: flex-start;
+}
+
+.flex1 {
+    min-height: 100px;
+    /* flex-grow: 1; */
+}
+
+.flex2 {
+    min-height: 120px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 150px; */
+    /* flex-grow: 0; */
+    align-self: center;
+}
+
+.flex3 {
+    min-height: 140px;
+    /* flex-shrink: 0; */
+    /* flex: 3 1 150px ; */
+    /* flex-grow: 3; */
+}

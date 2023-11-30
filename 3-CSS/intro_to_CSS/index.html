@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            background-color: rgb(230, 83, 230);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a warm-up activity for leanrning CSS.</p>
+    <br>
+
+    <h2>3 Ways to Include CSS Styles</h2>
+    <h3>Inline Style</h3>
+    <p style="background-color: pink;">This paragraph is styled using inline style.</p>
+    <br>
+
+    <h3>Internal CSS</h3>
+    <div>This div is styled using internal CSS.</div>
+    <div>This div is styled using internal CSS.</div>
+    <!-- div is block emelment which means it covers the ehole line/block  -->
+    <br>
+
+    <h3>External CSS</h3>
+    <span>This span is styled using exernal CSS.</span>
+    <span>This span is styled using exernal CSS.</span>
+    <!-- span is an inline element which means it only cover what it needs -->
+    <br><br>
+
+    <h2>CSS Selectors</h2>
+    <ul>
+        <li>This is selected using element selector.</li>
+        <li class="listClass">This is selected using class selector.</li>
+        <li class="listClass">This is selected using class selector.</li>
+        <li id="listID">This is selected using ID selector.</li>
+        <li value="list">This is selected using attribute selector.</li>
+        <li class="listClass1">This is selected using group selector.</li>
+        <li class="listClass2">This is selected using group selector.</li>
+        <li class="listClass3">This is selected using descendant selector.</li>
+    </ul>
+
+    <h2>Pseudo Classes</h2>
+    <hr>
+    <h3>Hover and Active Pseudo Class</h3>
+    <p>Hover over the button to change color</p>
+    <p>Click button to change color</p>
+    <button class="hoverBtn activeBtn">Hover over me or Click me!</button>
+
+    <h3>Focus Pseudo Class</h3>
+    <p>Click on input field to focus</p>
+    <input type="text" class="focusInput">
+    <hr>
+
+    <h3>Visited Pseudo Class</h3>
+    <a href="https://www.google.com" class="visitedLink">Visit me!</a>
+    <hr>
+
+    <br><br>
+
+    <h2>Pseudo Elments</h2>
+    <p class="firstLetter">The first letter of this paragraph is bigger than then rest of text.</p>
+
+    <p class="firstLine">The first line of this paragraph is color blue. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis amet, accusamus odit, adipisci reprehenderit et beatae molestiae debitis expedita, ipsam repellendus. Eos temporibus fugiat vero magnam sint quae quaerat, nobis asperiores est ex similique modi voluptate ut quisquam architecto earum suscipit perferendis fugit optio hic illo? Quam voluptatibus praesentium dolore id minima quis consequuntur dicta odio animi hic neque maiores placeat expedita, tenetur doloribus voluptatum ratione officiis nostrum saepe repudiandae omnis porro officia ea architecto? Molestiae accusantium repudiandae, quidem odio magni amet repellat beatae, accusamus sit incidunt cum animi laboriosam earum dolore, recusandae harum nostrum excepturi at quisquam a. Consequatur!</p>
+
+    <p class="beforeAndAfter">Add some content before and after this paragraph.</p>
+
+    <p class="price">500</p>
+
+    <p class="selectParts">Selct a part of this paragraph. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa temporibus deserunt officia odio consectetur, ipsa hic eligendi suscipit magni eos.</p>
+
+    <!-- lorem20  -->
+    <h2>Cascade Algorithm</h2>
+    <p class="cascade">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae odit accusamus ab! Corrupti quibusdam esse alias possimus voluptatem, consequuntur accusantium?</p>
+
+    <!-- for id and div, write div.name then press tab. It will automatically change the format -->
+    <div class="boxModel">
+        <p>Box Model</p>
+    </div>
+
+    <br><br><br><br>
+
+</body>
+</html>

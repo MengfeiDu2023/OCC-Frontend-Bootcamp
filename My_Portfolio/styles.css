@@ -1,0 +1,32 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.introduction {
+    background-color: azure;
+    background-position: center top;
+    font-family: Verdana;
+    text-align: center;
+    margin: 40px;
+}
+
+.skills, .services, .socialMedia{
+    background-color: azure;
+    margin: 40px;
+    border: hidden;
+    position: relative;
+}
+
+.skillsHead, .servicesHead, .socialMediaHead{
+    font-size: large;
+}
+
+.hoverBtn:hover {
+    background-color: black;
+    color: white;
+    cursor:pointer
+}
+
+.activeBtn:active {
+    background-color: darkgrey;
+}

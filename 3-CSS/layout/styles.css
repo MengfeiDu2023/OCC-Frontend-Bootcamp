@@ -1,0 +1,144 @@
+/* Box Sizing  */
+.box-content {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: azure;
+    box-sizing: content-box;
+    /* content-box : add up padding*2+width+border*2 */
+}
+
+.box-border {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightcoral;
+    box-sizing: border-box;
+    /* border box total width is 200, everything added up to 200 */
+}
+
+/* Display property  */
+.block {
+    display: block;
+    background-color: lightcoral;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inline{
+    display: inline;
+    background-color: beige;
+    /* cannot set width pr height for inline element */
+    padding: 10px;
+    margin: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+    /* this is for inline with width and height */
+    width: 200px;
+    height: 100px;
+    background-color: lightsalmon;
+}
+
+/* element positioning  */
+.static {
+    position: static;
+    background-color: lightseagreen;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+/* always better use margin to space elemnts */
+
+.relative {
+    position: relative;
+    background-color: chartreuse;
+    width: 200px;
+    height: 50px;
+    left: 80px;
+}
+
+.absolute{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: crimson;
+    top: 0;
+    left: 10px;
+    /* absolute needs position. in this case, top 0 is the guidance */
+}
+
+/* fixed stickat the same position */
+.fixed {
+    position: fixed;
+    background-color: lightpink;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    right: 80px;
+}
+
+.sticky{
+    position: sticky;
+    background-color: blueviolet;
+    width: 200px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+    /* right does not work. only the top and the left works.  */
+}
+
+.float-right{
+    float:right;
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+.float-left{
+    float:left;
+    width: 200px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+.clear-floats{
+    clear: both;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+/* centering elements */
+.parent-box {
+    background-color: aqua;
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-horizontal{
+    padding: 20px;
+    background-color: red;
+}
+
+.center-vertical{
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify works in this one. text-align does not work. why? */
+}
+
+.center-horizontal-vertical{
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* text align works in this one. justify doesnot work. why? */
+}
