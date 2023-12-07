@@ -1,22 +1,32 @@
-//String - abc123!@#$
-let name = "John";
-console.log("The type of name:", typeof name);
+//Introduction to Arrays
 
-//Number - 123456
-let age = 25;
-console.log("The type of age:",typeof age);
+let superheros = ["Superman","Aquaman","Joker","Batman","Iron Man"];
 
-//Bolean - True or False
-let isStudent = false;
-let isTeacher = true;
-console.log("Ths type of isStudent:",typeof isStudent);
-console.log("Ths type of isTeacher:",typeof isTeacher);
+// console.log("Hero 1 is ", superheros[0]);
+// console.log("Hero 5 is ", superheros[4]);
+// superheros[2]="Doctor Strange";
 
-//Null - International absence of data
-let girlFriend = null;
-console.log("The type pf girlFriend is:", typeof girlFriend);
+// //Push method (means to add one to the last)
+// superheros.push("Deadpool");
+// console.log(superheros);
 
-let city;
-console.log(city);
-console.log("The value of city:",city);
-console.log("The type of city:", typeof city);
+// //Pop method (means to remove the last one)
+// superheros.pop();
+
+// //Array Iteration
+// for (let i=0;i <= 4; i++){
+//     console.log("Hero",i+1, "is",superheros[i]);
+// }
+
+// //forEach method
+// superheros.forEach(function(hero){
+//     console.log("Hero is ",hero);
+// });
+
+//Array Method
+console.log("Array length is", superheros.length);
+console.log("Index of Iron Man is:", superheros.indexOf("Iron Man"));
+console.log("Joined Array:",superheros.join("-"));
+
+let slicedArray = superheros.slice(1,4);
+console.log(slicedArray);
