@@ -28,5 +28,10 @@ console.log("Array length is", superheros.length);
 console.log("Index of Iron Man is:", superheros.indexOf("Iron Man"));
 console.log("Joined Array:",superheros.join("-"));
 
-let slicedArray = superheros.slice(1,4);
-console.log(slicedArray);
+let slicedArray = superheros.slice(0,3);
+console.log("Sliced Array:",slicedArray);
+console.log("Superheros Array:",superheros);
+
+let removedElements = superheros.splice(2,2);
+console.log("Removed Elements:",removedElements);
+console.log("Updated Array:",superheros);
