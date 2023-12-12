@@ -1,19 +1,31 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Helvetica, Geneva, Tahoma, sans-serif;
 }
-
+#newDiv{
+    display: grid;
+    align-content: center;
+}
+#greetingHola{
+    align-self: baseline;
+}
 .introduction {
-    background-color: azure;
+    background-color:burlywood;
     background-position: center top;
     font-family: Verdana;
-    text-align: center;
+    text-align: left;
+    color: white;
     margin: 40px;
+    border-radius: 40px;
+    padding:20px;
 }
 
 .skills, .services, .socialMedia{
-    background-color: azure;
-    margin: 40px;
+    background-color: burlywood;
+    color:white;
+    margin: 60px;
     border: hidden;
+    border-radius: 40px;
+    padding: 20px;
     position: relative;
 }
 
@@ -30,3 +42,13 @@
 .activeBtn:active {
     background-color: darkgrey;
 }
+
+#avatar{
+    border-radius: 50%;
+    margin:10px;
+}
+
+#tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
